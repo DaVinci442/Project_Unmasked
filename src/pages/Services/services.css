@@ -1,0 +1,180 @@
+.active {
+    color: rgb(249, 108, 136);
+}
+
+.our-services {
+    text-align: center;
+    color: black;
+    height: 60px;
+    padding: 5px;
+    background: linear-gradient(180deg, rgba(179, 169, 98, 0.555) -50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.logotext-service {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 450px;
+    justify-content: space-around;
+    background-color: rgba(52, 75, 103, 1);
+    background-size: cover;
+}
+
+.logotext-service button {
+    width: 200px;
+    height: 50px;
+    background: crimson;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px 4px 4px black;
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo-service {
+    height: inherit;
+    width: 500px;
+}
+
+.text-service {
+    height: 350px;
+    width: 500px;
+    font-family: 'Javanese Text';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.first-section {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(238, 239, 231);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-even;
+    align-items: center;
+}
+
+h2 {
+    color: rgb(56, 69, 89);
+}
+
+.video-play {
+    height: 330px;
+    width: 600px;
+    display: flex;
+    flex-shrink: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.video-play video {
+    height: auto;
+    width: 600px;
+    transition: transform 0.2s ease-in-out;
+    filter: brightness(1.2) saturate(0.5) contrast(1);
+}
+
+.video-text {
+    width: 500px;
+    height: 330;
+    margin: auto;
+}
+
+
+/* service card start here */
+
+
+/* background-color: rgb(14, 30, 51); */
+
+.wholecard {
+    background-color: rgba(52, 75, 103, 1);
+    justify-content: space-evenly;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fullcard {
+    width: 350px;
+    height: 400px;
+    background-color: rgb(238, 239, 231);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(14, 30, 51);
+    text-align: center;
+}
+
+#card1 {
+    background-color: rgb(238, 239, 231);
+}
+
+#card1 h3 {}
+
+#card2 {
+    background-color: aqua;
+}
+
+#card3 {
+    background-color: aqua;
+}
+
+#card4 {
+    background-color: aqua;
+}
+
+.twocards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card1-text {
+    text-align: center;
+    width: 80%;
+    align-self: center;
+    font-family: 'javanese text';
+    line-height: 1.5;
+    color: solid black;
+    font-weight: 500px;
+}
+
+.fullcard img {
+    width: inherit;
+    height: 200px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    /* border-radius: 20px 20px 0px 0px; */
+}
+
+#famfam {
+    width: inherit;
+    height: 200px;
+    /* border-radius: 20px 20px 0px 0px; */
+    ;
+}
+
+.fullcard button {
+    width: 200px;
+    background: crimson;
+    border-bottom: 2px solid ash;
+    border-radius: 10px;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,160 @@
+ul {
+    display: flex;
+}
+
+li {
+    margin: 0 12px;
+    list-style: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-whole {
+    display: flex;
+    justify-content: space-between;
+    /* background: linear-gradient(90deg, rgba(14, 50, 104, 0.64) 42.68%, #2f4a61 50%); */
+    /* background-blend-mode: luminosity; */
+    background-color: rgb(14, 30, 51)
+}
+
+.site-logo {
+    width: 60%;
+    height: inherit;
+    margin: 9px;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-logo img {
+    height: inherit;
+    width: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.signup {
+    display: flex;
+    height: inherit;
+    justify-content: space-evenly;
+    width: 150px;
+    align-items: center;
+}
+
+.signup p {
+    margin: 0 5px;
+}
+
+li :hover {
+    color: crimson;
+}
+
+button {
+    margin: 0 10px;
+    background-color: crimson;
+    border: 0;
+    height: 35px;
+    width: 60px;
+    text-align: center;
+}
+
+.nav-sign-container {
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    width: 40%;
+}
+
+
+/* .unmasked__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.unmasked__navbar-links {
+    display: flex;
+}
+
+.nav1__links_ct {
+    display: flex;
+    width: 80%;
+}
+
+.unmasked__navlinks-logo {
+    width: 100%;
+}
+
+.unmasked__navlinks-logo img {
+    height: 40px;
+    width: 60px;
+    margin-left: 10%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.navbar__links {
+    display: flex;
+    margin-left: 10px;
+}
+
+.navbar__links.active {}
+
+.navbar__links p :hover {
+    color: rgba(252, 8, 8, 0.84);
+}
+
+.navbar__links p {
+    margin-top: 22px;
+    margin-right: 20px;
+    padding-right: 20px;
+    font-family: 'Javanese Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.signup {
+    display: flex;
+    margin-right: 20px;
+    padding-right: 70px;
+}
+
+.signup p {
+    margin-top: 5px;
+    font-family: 'Javanese Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+button {
+    margin-left: 10px;
+    background-color: rgba(252, 8, 8, 0.84);
+    width: 60px;
+    height: 30px;
+    border: 0px;
+    font-family: 'Javanese Text';
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: #fef6f6;
+} */

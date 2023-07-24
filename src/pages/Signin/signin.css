@@ -1,0 +1,104 @@
+.signin-whole {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.cube-whole {
+    width: 90%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cube1 {
+    width: 150px;
+    height: 150px;
+    background-color: bisque;
+    position: relative;
+}
+
+.signbox {
+    width: 80%;
+    height: 650px;
+    display: flex;
+    background-color: red;
+    align-self: center;
+    position: absolute;
+    margin: 75px;
+    box-shadow: 0px 1px 7px 0px black;
+}
+
+.cube2 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    align-self: last baseline;
+}
+
+.input-img {
+    height: inherit;
+    width: 400px;
+}
+
+.input-img img {
+    height: inherit;
+    width: inherit;
+}
+
+.input-whole {
+    height: inherit;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-holder {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 700px;
+    margin-top: 5px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.input-logo {
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+}
+
+.input-logo img {
+    height: inherit;
+    width: inherit;
+}
+
+.form-cover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(14, 30, 51);
+    width: 400px;
+}
+
+form button {
+    align-self: center;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: crimson;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#frm-btn-2 {
+    width: 250px;
+}

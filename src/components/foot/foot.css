@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    background-color: rgb(14, 30, 51)
+}
+
+.footer-sub {
+    align-self: center;
+    text-align: center;
+    width: 400px;
+}
