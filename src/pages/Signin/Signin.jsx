@@ -21,9 +21,6 @@ import './signin.css';
    }
   return (
     <>
-<div className="navbar">
-            <Navbar />
-        </div> 
  <div className="signin-whole">
  <div className="cube-whole">
    <div className="cube1"></div>
@@ -38,7 +35,7 @@ import './signin.css';
       </div>
       <div className="input-form">
         <div className="form-cover">
-        <form onSubmit={handleInput}>
+        <form onSubmit={handleInput} id='form-signin'>
         <label htmlFor='email'>Email </label>
         <input value={email} onChange={(em) => {setEmail(em.target.value)}} type='email' placeholder='your email' id='input-email' name='email' /><br/>
         <label htmlFor='password'>Password </label>
@@ -55,8 +52,6 @@ import './signin.css';
    <div className="cube2"></div>
  </div>
 </div>
-
-<Foot />
 
 </>
 

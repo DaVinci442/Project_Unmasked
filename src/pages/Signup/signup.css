@@ -97,7 +97,7 @@ h4 {
     width: 400px;
 }
 
-form {
+#form-signup {
     display: flex;
     flex-direction: column;
     color: white;
@@ -107,13 +107,14 @@ form {
     justify-content: space-around
 }
 
-form button {
+#form-signup button {
     align-self: center;
     width: 100px;
     height: 30px;
     color: white;
     background-color: crimson;
     cursor: pointer;
+    border: 0px;
     border-radius: 5px 5px 5px 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

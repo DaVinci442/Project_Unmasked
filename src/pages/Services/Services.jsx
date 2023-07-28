@@ -1,19 +1,77 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Ulogo from '../../assets/Ulogo.png';
-import employers from '../../assets/employers.jpg';
-import schools from '../../assets/Schools.jpg';
-import family from '../../assets/family.jpg';
+import Firms from '../../assets/firrms.jpg';
+import Institution from '../../assets/institution.webp';
+import family from '../../assets/familyyy.jpg';
+import Individual from '../../assets/individuaal.jpg'
 import {Navbar, Foot} from '../../components';
 import './services.css' ;
 
 import BetterHelp_v12 from '../../assets/BetterHelp_v12.mp4';
 const Services = () => {
   return (
-
-    // Navigation section starts here
     <>
-<Navbar />
+{/* Services third card section starts here */}
+<div className="card-section">
+<div className="service-header">
+  <h1>Our Services</h1>
+  </div>
+
+<div className="wholecard">
+<div className='fullcard'>
+    <img src={Firms}  alt='employers'/>
+  
+  <h3>Unmasked For Firms</h3>
+  <div className="card1-text">
+    <p>By partnering with Unmasked, 
+      your organization can offer their employees access to a wide range 
+      of mental health resources</p>
+  </div>
+
+</div>
+
+
+<div className='fullcard'>
+  
+    <img src={Individual}  alt='employers'/>
+  
+  <h3>Unmasked For Individuals</h3>
+  <div className="card1-text">
+    <p>  By partnering with Unmasked, 
+ organization can offer their employees access to a wide range 
+      of mental health resources</p>
+  </div>
+  </div>
+
+
+    <div className='fullcard' >
+    <img id='famfam' src={family}  alt='family'/>
+  
+  <h3 id='h3-1'>Unmasked For Families</h3>
+  <div className="card1-text">
+    <p>By partnering with Unmasked, 
+      your organization can offer their employees access to a wide range 
+      of mental health resources</p>
+  </div>
+
+</div>
+
+<div className='fullcard' >
+  
+    <img src={Institution}  alt='employers'/>
+  
+  <h3>Unmasked For Institutions</h3>
+  <div className="card1-text">
+    <p>By partnering with Unmasked, 
+      your organization can offer their employees access to a wide range 
+      of mental health resources</p>
+  </div>
+  </div>
+
+</div>
+</div>
+{/* card scetion ends here */}
 
 {/* Unmasked  video and text second section starts here */}
   <div className="first-section">
@@ -44,64 +102,9 @@ const Services = () => {
       </p>
          </div>
   </div>
-{/* logo text ends here */}
-
-{/* Services third card section starts here */}
-<div className="wholecard">
- 
-      
-<div className='fullcard'>
-    <img src={employers}  alt='employers'/>
-  
-  <h3>Unmasked For Firms</h3>
-  <div className="card1-text">
-    <p>By partnering with Unmasked, 
-      your organization can offer their employees access to a wide range 
-      of mental health resources</p>
-  </div>
-
-</div>
+{/* Video section ends here */}
 
 
-<div className='fullcard'>
-  
-    <img src={schools}  alt='employers'/>
-  
-  <h3>Unmasked For Individuals</h3>
-  <div className="card1-text">
-    <p>  By partnering with Unmasked, 
- organization can offer their employees access to a wide range 
-      of mental health resources</p>
-  </div>
-  </div>
-
-
-    <div className='fullcard' >
-    <img id='famfam' src={family}  alt='family'/>
-  
-  <h3 id='h3-1'>Unmasked For Families</h3>
-  <div className="card1-text">
-    <p>By partnering with Unmasked, 
-      your organization can offer their employees access to a wide range 
-      of mental health resources</p>
-  </div>
-
-</div>
-
-<div className='fullcard' >
-  
-    <img src={schools}  alt='employers'/>
-  
-  <h3>Unmasked For Institutions</h3>
-  <div className="card1-text">
-    <p>By partnering with Unmasked, 
-      your organization can offer their employees access to a wide range 
-      of mental health resources</p>
-  </div>
-  </div>
-
-</div>
-{/* card scetion ends here */}
 
 
 
@@ -118,36 +121,6 @@ const Services = () => {
   </div>
 </div>
 
-
-
-
-
-
-{/* Our services intro */}
-<div className="our-services">
-  <h1>Our Services</h1>
-</div>
-<div className="logotext-service">
-  <div className="text-service">
-
-<p>Welcome to <span>Un</span>masked, a dedicated mental health platform for the Ghanaian 
-community. Our mission is to empower and support individuals struggling 
-with mental health challenges by connecting them to qualified mental health
- experts and providing a safe space for growth and healing. We understand
-  that mental health is an essential aspect of overall well-being, and we
-   believe that everyone deserves access to compassionate, professional care. No matter the challenge you're facing, Unmasked is here to stand by your side every step of the way.
-
-Explore our range of services designed to cater to your unique 
-needs and begin your journey towards a healthier, happier you.</p><br/>
-<button><Link to='./'>Get Started</Link></button>
-
-
-  </div>
-  <div className="logo-service">
-    <img src={Ulogo} />
-  </div>
-</div>
-{/* seric section ends here */}
 
 <Foot />
   </>

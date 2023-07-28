@@ -23,7 +23,7 @@ const Navbar = () => {
         </nav>
         <div className="signup">
         <p><Link to='/Signin'>Sign in</Link></p>
-        <button><Link to = '/Signup'>Sign up</Link></button>
+        <button id='nav-button'><Link to = '/Signup'>Sign up</Link></button>
         </div>
       </div>
       

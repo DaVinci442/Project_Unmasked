@@ -23,9 +23,6 @@ import './signup.css';
    }
   return (
     <>
-<div className="navbar">
-            <Navbar />
-        </div> 
 
  <div className="signin-whole">
  <div className="cube-whole">
@@ -45,7 +42,7 @@ import './signup.css';
       {/*  form starts here*/}
       <div className="input-form">
         <div className="form-cover">
-        <form onSubmit={handleInput}>
+        <form onSubmit={handleInput} id='form-signup'>
         <label htmlFor='name'>Fullname </label>
         <input value={name}  onChange={(txt) =>  {setName(txt.target.value)}} type='text' placeholder='your full name' id='input-name' name='text' /><br/>
         <label htmlFor='email'>Email </label>
@@ -62,10 +59,6 @@ import './signup.css';
    </div>
    <div className="cube2"></div>
  </div>
-</div>
-<div>
-<Foot />
-
 </div>
 
 </>
