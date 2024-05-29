@@ -132,3 +132,14 @@
         background-color: crimson;
         cursor: pointer;
     }
+    
+    .form-error {
+        color: red;
+        font-family: 'javanese text';
+        text-align: center;
+    }
+    
+    .phone-error {
+        color: red;
+        text-align: center;
+    }

@@ -6,13 +6,13 @@ import Institution from '../../assets/institution.webp';
 import family from '../../assets/familyyy.jpg';
 import Individual from '../../assets/individuaal.jpg'
 import {Navbar, Foot} from '../../components';
-import './services.css' ;
+import './userserve.css' ;
 
 import BetterHelp_v12 from '../../assets/BetterHelp_v12.mp4';
-const Services = () => {
+import Userhome from '../Userhome/Userhome';
+const Userserve = () => {
   return (
     <>
-    
 {/* Services third card section starts here */}
 <div className="card-section">
 <div className="service-header">
@@ -129,4 +129,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Userserve

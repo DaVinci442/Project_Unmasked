@@ -1,8 +1,8 @@
 import React from 'react'
-import './about.css'
-import { Navbar , Foot} from '../../components';
+import './userabout.css'
+import {Usernav} from '../../components';
 
-const about = () => {
+const Userabout = () => {
   return (
     <>
 <div className="about-section">
@@ -30,4 +30,4 @@ needs and begin your journey towards a healthier, happier you.</p>
   )
 }
 
-export default about
+export default Userabout

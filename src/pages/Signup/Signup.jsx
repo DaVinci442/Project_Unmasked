@@ -1,29 +1,55 @@
 import React from 'react';
+import supabase from '../../config/supabaseClient';
 import{useRef, useState, useEffect} from 'react';
-import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Navbar, Foot } from '../../components';
 import Ulogo from '../../assets/Ulogo.png';
 import blackwoman from '../../assets/blackwoman.jpg';
 import './signup.css';
-
-//  const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/
-// const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
-// const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-// const REGISTER_URL = '/register';
+import { Link } from 'react-router-dom';
+import { Navbar } from '../../components';
  
    const Signup = () => {
-   const [email , setEmail] = useState('');
-   const [password, setPassword] = useState('');
-   const [name, setName] = useState('')
 
-   const handleInput = (em) =>   {
-    em.preventDefault();
-    console.log(email , password, name)
+   const [semail , setSemail] = useState('');
+   const [spassword, setSpassword] = useState('');
+   const [sname, setSname] = useState('');
+
+   const resetForm = () => {
+    setSname('');
+    setSemail('');
+    setSpassword('');
    }
+
+   const handleSignup = async (event) => {
+    event.preventDefault();
+
+try {
+  
+  const { data, error } = await supabase.auth.signUp(
+    {
+      email: semail,
+      password: spassword,
+      options: {
+        data: {
+          fullname: sname,
+  
+        }
+      }
+    }
+  )
+  alert('Check your email for verification link')
+  resetForm()
+
+} catch (error) {
+  alert(error)
+}
+   
+  };
+
+  
+
   return (
     <>
-
+  
  <div className="signin-whole">
  <div className="cube-whole">
    <div className="cube1"></div>
@@ -42,17 +68,17 @@ import './signup.css';
       {/*  form starts here*/}
       <div className="input-form">
         <div className="form-cover">
-        <form onSubmit={handleInput} id='form-signup'>
+        <form onSubmit={handleSignup} id='form-signup'>
         <label htmlFor='name'>Fullname </label>
-        <input value={name}  onChange={(txt) =>  {setName(txt.target.value)}} type='text' placeholder='your full name' id='input-name' name='text' /><br/>
+        <input value={sname}  onChange={(sname) =>  {setSname(sname.target.value)}} type='text' placeholder='your full name' id='input-name' name='text' /><br/>
         <label htmlFor='email'>Email </label>
-        <input value={email} onChange={(em) => {setEmail(em.target.value)}} type='email' placeholder='your email' id='input-email' name='email' />
+        <input value={semail} onChange={(semail) => {setSemail(semail.target.value)}} type='email' placeholder='your email' id='input-email' name='email' />
         <label htmlFor='password'>Password </label>
-        <input value={password} onChange={(pass) => {setPassword(pass.target.value)}} type='password' placeholder='your password' id='input-password' name='password' /> 
-        <button type='submit'>Signup</button>
+        <input value={spassword} onChange={(spassword) => {setSpassword(spassword.target.value)}} type='password' placeholder='your password' id='input-password' name='password' /> 
+        <button type='submit' >Signup</button>
         </form>
         </div>
-        <p id='already-login'>Already have an account? Login here</p>
+        <p id='already-login'>Already have an account? <Link to= '/Signin' id='log'>Login</Link> </p>
       </div>
       </div> 
     </div>

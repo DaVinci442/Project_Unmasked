@@ -1,0 +1,95 @@
+.res-header {
+    height: fit-content;
+    width: fit-content;
+    color: rgb(238, 239, 231);
+    line-height: 1;
+}
+
+.res-header>p {
+    font-family: 'Javanese text';
+    font-size: 40px;
+    text-align: center;
+}
+
+#res-head-p2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.res-intro {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(238, 239, 231);
+    word-wrap: wrap;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.resintro-sub {
+    width: 70%;
+    height: fit-content;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    word-wrap: wrap;
+    font-family: 'javanese text';
+    line-height: 1.5;
+}
+
+#intro-a {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.res-card-whole {
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.res-fullcard {
+    width: inherit;
+    height: inherit;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    background-color: rgb(238, 239, 231);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.res-image1 {
+    width: 30%;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.res-image1>img {
+    width: 100%;
+    height: inherit;
+}
+
+.health-text {
+    text-align: left;
+    width: 60%;
+    align-self: center;
+    font-family: 'javanese text';
+    line-height: 1.5;
+    color: solid black;
+    font-weight: 500px;
+}
+
+#health-h3 {
+    text-align: left;
+    margin-bottom: 0px;
+}

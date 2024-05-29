@@ -113,3 +113,8 @@
 #frm-btn-2 {
     width: 250px;
 }
+
+.forgot {
+    color: crimson;
+    cursor: pointer;
+}

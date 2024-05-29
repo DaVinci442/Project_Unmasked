@@ -1,75 +1,78 @@
-import React from 'react';
+import React from 'react'
 import { useState , useEffect } from 'react';
-import { Navbar } from '../../components';
+import { Usernav } from '../../components';
 import supabase from '../../config/supabaseClient';
-import './contact.css';
+import './usercontact.css';
 
-const Contact = () => {
-const [cname , setCname] = useState('');
-const [caddress, setCaddress] = useState('');
-const [cemail , setCemail] = useState('');
-const [cphone , setCphone] = useState('');
-const [csubject , setCsubject] = useState('');
-const [cmessage , setCmessage] = useState('');
-const [phoneError, setPhoneError] = useState('');
-const [formError, setFormError] = useState(null)
+const Usercontact = () => {
 
-const resetForm = () => {
-  setCname('');
-  setCaddress('');
-  setCemail('');
-  setCphone('');
-  setCsubject('');
-  setCmessage('');
-};
+    const [cname , setCname] = useState('');
+    const [caddress, setCaddress] = useState('');
+    const [cemail , setCemail] = useState('');
+    const [cphone , setCphone] = useState('');
+    const [csubject , setCsubject] = useState('');
+    const [cmessage , setCmessage] = useState('');
+    const [phoneError, setPhoneError] = useState('');
+    const [formError, setFormError] = useState(null)
+    
+    const resetForm = () => {
+      setCname('');
+      setCaddress('');
+      setCemail('');
+      setCphone('');
+      setCsubject('');
+      setCmessage('');
+    };
+    
+    const handlePhoneInput = (event) => {
+      const value = event.target.value;
+       
+      if (value && !/^\d+$/.test(value)) {
+        setPhoneError('Phone number must be an integer.');
+      } else {
+        setPhoneError('');
+      }
+    };
+    
+    const handleCsubmit = async(e) => {
+      e.preventDefault()
+       
+      if(!cname || !cemail || !cmessage) {
+       setFormError('Please fill in all required fields correctly !!')
+      }
+      
+    // Prepare the data to be submitted
+    const data = {
+      name: cname,
+      address: caddress,
+      email: cemail,
+      phone: cphone,
+      subject: csubject,
+      message: cmessage,
+    };
+    
+    try {
+      // Insert the data into the Superbase table
+      const { data: newRecord, error } = await supabase
+        .from('contactUs')
+        .insert([data]);
+    
+      if (error) {
+        console.error('Error inserting data:', error);
+      } else {
+        console.log('Data inserted successfully:', newRecord);
+        // Reset the form after successful submission
+        resetForm();
+      }
+    } catch (error) {
+      console.error('Error inserting data:', error);
+    }
+    };
 
-const handlePhoneInput = (event) => {
-  const value = event.target.value;
-   
-  if (value && !/^\d+$/.test(value)) {
-    setPhoneError('Phone number must be an integer.');
-  } else {
-    setPhoneError('');
-  }
-};
-
-const handleCsubmit = async(e) => {
-  e.preventDefault()
-   
-  if(!cname || !cemail || !cmessage) {
-   setFormError('Please fill in all required fields correctly !!')
-  }
-  
-// Prepare the data to be submitted
-const data = {
-  name: cname,
-  address: caddress,
-  email: cemail,
-  phone: cphone,
-  subject: csubject,
-  message: cmessage,
-};
-
-try {
-  // Insert the data into the Superbase table
-  const { data: newRecord, error } = await supabase
-    .from('contactUs')
-    .insert([data]);
-
-  if (error) {
-    console.error('Error inserting data:', error);
-  } else {
-    console.log('Data inserted successfully:', newRecord);
-    // Reset the form after successful submission
-    resetForm();
-  }
-} catch (error) {
-  console.error('Error inserting data:', error);
-}
-};
 
   return (
-    <>
+<>
+  
 {/* contact card section */}
 <div className="contact-section">
   <div className="contact-outline">
@@ -117,8 +120,7 @@ try {
   </div>
 </div>
 
-    </>
-  )
+    </>  )
 }
 
-export default Contact
+export default Usercontact

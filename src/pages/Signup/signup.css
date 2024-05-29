@@ -123,6 +123,15 @@ h4 {
     text-align: center;
 }
 
+#log {
+    text-decoration: none;
+    color: rgb(14, 30, 51);
+}
+
+#log:hover {
+    color: crimson;
+}
+
 #frm-btn-2 {
     width: 250px;
 }

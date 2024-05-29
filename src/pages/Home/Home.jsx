@@ -1,12 +1,16 @@
 import React from 'react'
+import supabase from '../../config/supabaseClient';
+import { Navbar } from '../../components';
 import './home.css'
 import { Link } from 'react-router-dom';
 import psychologist from '../../assets/psychologist.jpg';
 import leaf from '../../assets/leaf.jpg';
 import ebonyhug from '../../assets/ebonyhug.jpg';
 const Home = () => {
+
   return (
     <>
+  
     {/* first section starts here */}
 
     <div className="firstw-section">
